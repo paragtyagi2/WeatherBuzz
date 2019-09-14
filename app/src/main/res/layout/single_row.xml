@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@drawable/test">
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/singleImage"
+        android:src="@drawable/a1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_toRightOf="@+id/singleImage"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather Text "
+                android:textColor="@color/current_text"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:id="@+id/singleWText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textColor="@color/current_text"
+                android:text="Precipitation"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:id="@+id/singlePrecp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/current_text"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:text="Day Light:No"
+                android:layout_weight="1"
+                android:id="@+id/singleDN"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textColor="@color/current_text"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:text="Date and Time"
+                android:layout_weight="1"
+                android:id="@+id/singleDT"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:textColor="@color/current_text"
+                android:textSize="57dp"
+                android:text="16"
+                android:paddingLeft="-10dp"
+                android:gravity="center"
+                android:id="@+id/singleTemt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/current_text"
+                android:gravity="center"
+                android:text="&#xb0;C"
+                android:textSize="43dp"
+                android:id="@+id/singleDegree"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
